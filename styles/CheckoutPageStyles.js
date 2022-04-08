@@ -60,3 +60,14 @@ export const Text = styled.p`
   opacity: 0.5;
   max-width: 554px;
 `;
+
+export const Bottom = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media (max-width: 530px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;

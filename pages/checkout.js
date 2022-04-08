@@ -211,7 +211,7 @@ export default function Checkout({ prev }) {
                     </div>
                   </C.Split>
                 ) : (
-                  <Flex gap={32}>
+                  <C.Bottom>
                     <HandsIcon style={{ minWidth: "48px" }} />
                     <C.Text>
                       The ‘Cash on Delivery’ option enables you to pay in cash
@@ -219,7 +219,7 @@ export default function Checkout({ prev }) {
                       make sure your address is correct so that your order will
                       not be cancelled.
                     </C.Text>
-                  </Flex>
+                  </C.Bottom>
                 )}
               </C.FormCover>
               <Summary submit={props.handleSubmit} />
