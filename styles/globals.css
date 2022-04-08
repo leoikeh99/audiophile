@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #fafafa;
+  font-family: "Manrope", sans-serif;
 }
 
 a {
@@ -11,6 +13,22 @@ a {
   text-decoration: none;
 }
 
+button,
+input,
+textarea {
+  font-family: "Manrope", sans-serif;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#nprogress .bar {
+  background: #d87d4a !important;
+}
+
+#nprogress .spinner-icon {
+  display: none;
 }
