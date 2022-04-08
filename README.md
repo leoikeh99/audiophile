@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://invoiceapp1000.netlify.app/">
+    <a href="https://audiophile-gamma.vercel.app/">
       Demo
     </a> 
   </h3>
