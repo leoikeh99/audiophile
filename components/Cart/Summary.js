@@ -40,12 +40,14 @@ export default function Summary({ submit }) {
           <p className="light-text">VAT (INCLUDED)</p>
           <p className="dark-text">
             ${" "}
-            {currencyToString(
-              0.2 *
-                cart
-                  .map((val) => val.product.price * val.amount)
-                  .reduce((a, b) => a + b)
-            )}
+            {cart.length !== 0
+              ? currencyToString(
+                  0.2 *
+                    cart
+                      .map((val) => val.product.price * val.amount)
+                      .reduce((a, b) => a + b)
+                )
+              : 0}
           </p>
         </SpaceOut>
         <Margin m={24} />
