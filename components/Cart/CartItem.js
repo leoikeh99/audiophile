@@ -23,6 +23,7 @@ export default function CartItem({
           src={image.mobile}
           width={!small ? 64 : 50}
           height={!small ? 64 : 50}
+          alt="product"
         />
         <div>
           <Text>{cartName}</Text>

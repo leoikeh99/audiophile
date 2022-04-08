@@ -17,7 +17,7 @@ export default function Product({ title, product, prev }) {
     <Layout title={title}>
       <styles.Cover>
         <Container>
-          <Link href={prev}>
+          <Link href={prev} passHref>
             <BackBtn>Go Back</BackBtn>
           </Link>
           <ProductItem product={product} _addToCart={true} />

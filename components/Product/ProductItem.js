@@ -31,7 +31,7 @@ export default function ProductItem({ product, reverse, _addToCart, center }) {
         <P.Name>{product.name}</P.Name>
         <P.Text center={center}>{product.description}</P.Text>
         {!_addToCart ? (
-          <Link href={`/product/${product.slug}`}>
+          <Link href={`/product/${product.slug}`} passHref>
             <Button color="orange">SEE PRODUCT</Button>
           </Link>
         ) : (

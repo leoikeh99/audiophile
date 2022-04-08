@@ -61,7 +61,7 @@ export default function Header() {
               className="menu-icon"
               onClick={toggleNavBar}
             />
-            <Link href="/">
+            <Link href="/" passHref>
               <img src="/assets/shared/desktop/logo.svg" alt="" />
             </Link>
           </W.Flex>

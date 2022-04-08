@@ -38,7 +38,7 @@ export default function Cart({ setShowCart }) {
             </p>
           </SpaceOut>
           <Margin m={24} />
-          <Link href="/checkout">
+          <Link href="/checkout" passHref>
             <Button color="orange" full>
               Checkout
             </Button>

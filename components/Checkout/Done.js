@@ -16,7 +16,7 @@ export default function Done() {
         <D.Header>THANK YOU FOR YOUR ORDER</D.Header>
         <D.Text>You will receive an email confirmation shortly.</D.Text>
         <Reciept showLess={showLess} setShowLess={setShowLess} />
-        <Link href="/">
+        <Link href="/" passHref>
           <Button color="orange" full>
             BACK TO HOME
           </Button>

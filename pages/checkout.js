@@ -39,7 +39,7 @@ export default function Checkout({ prev }) {
   return (
     <Layout>
       <Container>
-        <Link href={prev}>
+        <Link href={prev} passHref>
           <BackBtn style={{ marginTop: "141px" }}>Go Back</BackBtn>
         </Link>
         <Formik
