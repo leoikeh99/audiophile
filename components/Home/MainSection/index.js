@@ -4,7 +4,7 @@ import { Container } from "../../../styles/widgets";
 import Card1 from "../../Cards/Card1";
 import { Button } from "../../../styles/widgets/Buttons";
 import PreFooter from "../../PreFooter";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function MainSection() {
   return (
@@ -41,15 +41,18 @@ export default function MainSection() {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
+          <Link href='/product/zx9-speaker' passHref>
           <Button color="black">SEE PRODUCT</Button>
+          </Link>
         </div>
       </MS.ShowCase1>
 
       <MS.ShowCase2 data-aos="fade-up">
         <MS.Text>ZX7 SPEAKER</MS.Text>
+        <Link href='/product/zx7-speaker' passHref>
         <Button color="transparent" border>
           SEE PRODUCT
-        </Button>
+        </Button></Link>
       </MS.ShowCase2>
 
       <MS.ShowCase3>
@@ -57,9 +60,10 @@ export default function MainSection() {
 
         <div className="content" data-aos="flip-left">
           <MS.Text>YX1 EARPHONES</MS.Text>
+          <Link href='/product/yx1-earphones' passHref>
           <Button color="transparent" border>
             SEE PRODUCT
-          </Button>
+          </Button></Link>
         </div>
       </MS.ShowCase3>
 
