@@ -8,66 +8,70 @@ import Link from "next/link";
 
 export default function MainSection() {
   return (
-    <Container>
-      <MS.Cards>
-        <Card1
-          title="HEADPHONES"
-          img="/assets/shared/desktop/image-category-thumbnail-headphones.png"
-          data_aos="zoom-in"
-          route="/headphones"
-        />
-        <Card1
-          title="SPEAKERS"
-          img="/assets/shared/desktop/image-category-thumbnail-speakers.png"
-          data_aos="zoom-in"
-          route="/speakers"
-        />
-        <Card1
-          title="EARPHONES"
-          img="/assets/shared/desktop/image-category-thumbnail-earphones.png"
-          data_aos="zoom-in"
-          route="/earphones"
-        />
-      </MS.Cards>
+    <main>
+      <Container>
+        <MS.Cards>
+          <Card1
+            title="HEADPHONES"
+            img="/assets/shared/desktop/image-category-thumbnail-headphones.png"
+            data_aos="zoom-in"
+            route="/headphones"
+          />
+          <Card1
+            title="SPEAKERS"
+            img="/assets/shared/desktop/image-category-thumbnail-speakers.png"
+            data_aos="zoom-in"
+            route="/speakers"
+          />
+          <Card1
+            title="EARPHONES"
+            img="/assets/shared/desktop/image-category-thumbnail-earphones.png"
+            data_aos="zoom-in"
+            route="/earphones"
+          />
+        </MS.Cards>
 
-      <MS.ShowCase1 data-aos="fade-right">
-        <span className="rad1"></span>
-        <span className="rad2"></span>
-        <span className="rad3"></span>
-        <div className="image"></div>
-        <div className="content">
-          <h2>ZX9 SPEAKER</h2>
-          <p>
-            Upgrade to premium speakers that are phenomenally built to deliver
-            truly remarkable sound.
-          </p>
-          <Link href='/product/zx9-speaker' passHref>
-          <Button color="black">SEE PRODUCT</Button>
+        <MS.ShowCase1 data-aos="fade-right">
+          <span className="rad1"></span>
+          <span className="rad2"></span>
+          <span className="rad3"></span>
+          <div className="image"></div>
+          <div className="content">
+            <h2>ZX9 SPEAKER</h2>
+            <p>
+              Upgrade to premium speakers that are phenomenally built to deliver
+              truly remarkable sound.
+            </p>
+            <Link href="/product/zx9-speaker" passHref>
+              <Button color="black">SEE PRODUCT</Button>
+            </Link>
+          </div>
+        </MS.ShowCase1>
+
+        <MS.ShowCase2 data-aos="fade-up">
+          <MS.Text>ZX7 SPEAKER</MS.Text>
+          <Link href="/product/zx7-speaker" passHref>
+            <Button color="transparent" border>
+              SEE PRODUCT
+            </Button>
           </Link>
-        </div>
-      </MS.ShowCase1>
+        </MS.ShowCase2>
 
-      <MS.ShowCase2 data-aos="fade-up">
-        <MS.Text>ZX7 SPEAKER</MS.Text>
-        <Link href='/product/zx7-speaker' passHref>
-        <Button color="transparent" border>
-          SEE PRODUCT
-        </Button></Link>
-      </MS.ShowCase2>
+        <MS.ShowCase3>
+          <div className="img" data-aos="flip-right"></div>
 
-      <MS.ShowCase3>
-        <div className="img" data-aos="flip-right"></div>
+          <div className="content" data-aos="flip-left">
+            <MS.Text>YX1 EARPHONES</MS.Text>
+            <Link href="/product/yx1-earphones" passHref>
+              <Button color="transparent" border>
+                SEE PRODUCT
+              </Button>
+            </Link>
+          </div>
+        </MS.ShowCase3>
 
-        <div className="content" data-aos="flip-left">
-          <MS.Text>YX1 EARPHONES</MS.Text>
-          <Link href='/product/yx1-earphones' passHref>
-          <Button color="transparent" border>
-            SEE PRODUCT
-          </Button></Link>
-        </div>
-      </MS.ShowCase3>
-
-      <PreFooter />
-    </Container>
+        <PreFooter />
+      </Container>
+    </main>
   );
 }
