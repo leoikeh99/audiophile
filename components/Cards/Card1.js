@@ -4,9 +4,9 @@ import { Button2 } from "../../styles/widgets/Buttons";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Card1({ img, title, data_aos, route }) {
+export default function Card1({ img, title, route }) {
   return (
-    <Card data-aos={data_aos ? data_aos : null}>
+    <Card>
       <div className="mainImage">
         <Image height={160} width={180} src={img} alt="cardImg" />
       </div>

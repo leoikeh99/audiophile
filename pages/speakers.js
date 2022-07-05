@@ -10,10 +10,6 @@ import data from "../data.json";
 import AOS from "aos";
 
 export default function Speakers({ title, speakers }) {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <Layout title={title}>
       <SubHeader title="SPEAKERS" />
@@ -45,7 +41,7 @@ export default function Speakers({ title, speakers }) {
           />
         </Cards>
 
-        <PreFooter noAnimate={true} />
+        <PreFooter />
       </Container>
     </Layout>
   );

@@ -8,7 +8,7 @@ export default function HeroSection() {
     <HERO.Cover>
       <W.Container>
         <HERO.Layout>
-          <HERO.FirstSection data-aos="fade-right">
+          <HERO.FirstSection>
             <HERO.Title>NEW PRODUCT</HERO.Title>
             <HERO.Heading>XX99 Mark II HeadphoneS</HERO.Heading>
             <HERO.Desc>

@@ -13,19 +13,16 @@ export default function MainSection() {
         <Card1
           title="HEADPHONES"
           img="/assets/shared/desktop/image-category-thumbnail-headphones.png"
-          data_aos="zoom-in"
           route="/headphones"
         />
         <Card1
           title="SPEAKERS"
           img="/assets/shared/desktop/image-category-thumbnail-speakers.png"
-          data_aos="zoom-in"
           route="/speakers"
         />
         <Card1
           title="EARPHONES"
           img="/assets/shared/desktop/image-category-thumbnail-earphones.png"
-          data_aos="zoom-in"
           route="/earphones"
         />
       </MS.Cards>
@@ -57,9 +54,9 @@ export default function MainSection() {
       </MS.ShowCase2>
 
       <MS.ShowCase3>
-        <div className="img" data-aos="flip-right"></div>
+        <div className="img"></div>
 
-        <div className="content" data-aos="flip-left">
+        <div className="content">
           <MS.Text>YX1 EARPHONES</MS.Text>
           <Link href="/product/yx1-earphones" passHref>
             <Button color="transparent" border>

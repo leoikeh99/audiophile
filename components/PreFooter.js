@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 
-export default function PreFooter({ noAnimate }) {
+export default function PreFooter() {
   return (
     <Cover>
-      <Content data-aos={!noAnimate ? "zoom-in-right" : null}>
+      <Content>
         <Header>
           Bringing you the <span>best</span> audio gear
         </Header>
@@ -18,7 +18,7 @@ export default function PreFooter({ noAnimate }) {
           best place to buy your portable audio equipment.
         </Text>
       </Content>
-      <div className="img" data-aos={noAnimate ? null : "fade-down"}></div>
+      <div className="img"></div>
     </Cover>
   );
 }
