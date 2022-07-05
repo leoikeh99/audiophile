@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProductItemCover = styled.div`
+export const ProductItemCover = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -13,7 +13,7 @@ export default function index() {
       <Container style={{ position: "relative" }}>
         <F.Top>
           <img src="/assets/shared/desktop/logo.svg" alt="" />
-          <nav>
+          <nav id="footer-nav" aria-label="footer-navigation">
             <Link href="/">HOME</Link>
             <Link href="/headphones">HEADPHONES</Link>
             <Link href="/speakers">SPEAKERS</Link>

@@ -65,7 +65,7 @@ export default function Header() {
               <img src="/assets/shared/desktop/logo.svg" alt="" />
             </Link>
           </W.Flex>
-          <nav>
+          <nav id="header-nav" aria-label="header-navigation">
             <Link href="/">HOME</Link>
             <Link href="/headphones">HEADPHONES</Link>
             <Link href="/speakers">SPEAKERS</Link>
