@@ -20,7 +20,7 @@ export default function Navbar() {
     <>
       <Overlay id="overlay" onClick={toggleNavBar} />
 
-      <NavbarStyled id="navBar">
+      <NavbarStyled id="navBar" aria-label="mob-navigation">
         <Cards style={{ marginBottom: "0" }}>
           <Card1
             title="HEADPHONES"
@@ -43,7 +43,7 @@ export default function Navbar() {
   );
 }
 
-export const NavbarStyled = styled.div`
+export const NavbarStyled = styled.nav`
   background-color: #fff;
   width: 100%;
   height: 340px;
