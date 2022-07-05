@@ -14,10 +14,18 @@ export default function index() {
         <F.Top>
           <img src="/assets/shared/desktop/logo.svg" alt="" />
           <nav id="footer-nav" aria-label="footer-navigation">
-            <Link href="/">HOME</Link>
-            <Link href="/headphones">HEADPHONES</Link>
-            <Link href="/speakers">SPEAKERS</Link>
-            <Link href="/earphones">EARPHONES</Link>
+            <Link href="/" passHref>
+              HOME
+            </Link>
+            <Link href="/headphones" passHref>
+              HEADPHONES
+            </Link>
+            <Link href="/speakers" passHref>
+              SPEAKERS
+            </Link>
+            <Link href="/earphones" passHref>
+              EARPHONES
+            </Link>
           </nav>
         </F.Top>
         <F.Text mb>
