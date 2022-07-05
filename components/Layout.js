@@ -21,7 +21,7 @@ export default function Layout({ title, keywords, desc, children }) {
         </Head>
         <Header />
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </div>
     )
