@@ -19,7 +19,7 @@ export const Card = styled.div`
   }
 `;
 
-export const Card2Cover = styled.div`
+export const Card2Cover = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -41,7 +41,7 @@ export const Card2Title = styled.p`
   letter-spacing: 1.71px;
 `;
 
-export const Cards = styled.div`
+export const Cards = styled.section`
   display: flex;
   align-item: center;
   justify-content: space-between;

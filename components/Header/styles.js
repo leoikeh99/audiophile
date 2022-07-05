@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const paths = ["/", "/speakers", "/headphones", "/earphones"];
 
-export const Container = styled.div`
+export const Container = styled.header`
   background: ${({ route }) =>
     paths.some((path) => route === path) ? "transparent" : "#000"};
   height: 97px;

@@ -46,7 +46,7 @@ export const ProductItemCover = styled.section`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.section`
   max-width: 445px;
 
   @media (max-width: 930px) {
