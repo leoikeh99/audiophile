@@ -38,7 +38,7 @@ export default function MainSection() {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <Link href="/product/zx9-speaker" passHref>
+          <Link href="/product/zx9-speaker">
             <Button color="black">SEE PRODUCT</Button>
           </Link>
         </div>
@@ -46,7 +46,7 @@ export default function MainSection() {
 
       <MS.ShowCase2 data-aos="fade-up">
         <MS.Text>ZX7 SPEAKER</MS.Text>
-        <Link href="/product/zx7-speaker" passHref>
+        <Link href="/product/zx7-speaker">
           <Button color="transparent" border>
             SEE PRODUCT
           </Button>
@@ -58,7 +58,7 @@ export default function MainSection() {
 
         <div className="content">
           <MS.Text>YX1 EARPHONES</MS.Text>
-          <Link href="/product/yx1-earphones" passHref>
+          <Link href="/product/yx1-earphones">
             <Button color="transparent" border>
               SEE PRODUCT
             </Button>
