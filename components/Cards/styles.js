@@ -25,7 +25,7 @@ export const Card2Cover = styled.section`
   flex-direction: column;
 `;
 
-export const CardTitle = styled.p`
+export const CardTitle = styled.h5`
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -33,7 +33,7 @@ export const CardTitle = styled.p`
   letter-spacing: 1.3px;
 `;
 
-export const Card2Title = styled.p`
+export const Card2Title = styled.h5`
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
