@@ -11,7 +11,7 @@ export default function Card2({ product: { name, slug, image } }) {
       <Image height={318} width={350} src={image.desktop} alt="cardImg" />
       <Margin m={20} />
       <C.Card2Title>{name}</C.Card2Title>
-      <Link href={`/product/${slug}`} passHref>
+      <Link href={`/product/${slug}`}>
         <Button color="orange">SEE PRODUCT</Button>
       </Link>
     </C.Card2Cover>

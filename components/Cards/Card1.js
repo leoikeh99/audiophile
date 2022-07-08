@@ -11,7 +11,7 @@ export default function Card1({ img, title, route }) {
         <Image height={160} width={180} src={img} alt="cardImg" />
       </div>
       <CardTitle>{title}</CardTitle>
-      <Link href={route} passHref>
+      <Link href={route}>
         <Button2>
           SHOP
           <img src="/assets/shared/desktop/icon-arrow-right.svg" alt="" />
