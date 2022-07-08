@@ -2,7 +2,6 @@ import React from "react";
 import * as F from "./styles";
 import { Container } from "../../styles/widgets";
 import Link from "next/link";
-import Image from "next/image";
 import FB from "../../public/assets/shared/desktop/icon-facebook.svg";
 import TW from "../../public/assets/shared/desktop/icon-twitter.svg";
 import INSTA from "../../public/assets/shared/desktop/icon-instagram.svg";

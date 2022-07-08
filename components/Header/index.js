@@ -61,23 +61,15 @@ export default function Header() {
               className="menu-icon"
               onClick={toggleNavBar}
             />
-            <Link href="/" passHref>
+            <Link href="/">
               <img src="/assets/shared/desktop/logo.svg" alt="" />
             </Link>
           </W.Flex>
           <nav id="header-nav" aria-label="header-navigation">
-            <Link href="/" passHref>
-              HOME
-            </Link>
-            <Link href="/headphones" passHref>
-              HEADPHONES
-            </Link>
-            <Link href="/speakers" passHref>
-              SPEAKERS
-            </Link>
-            <Link href="/earphones" passHref>
-              EARPHONES
-            </Link>
+            <Link href="/">HOME</Link>
+            <Link href="/headphones">HEADPHONES</Link>
+            <Link href="/speakers">SPEAKERS</Link>
+            <Link href="/earphones">EARPHONES</Link>
           </nav>
           <CartIcon fill="#fff" onClick={() => setShowCart(!showCart)} />
         </H.Layout>
