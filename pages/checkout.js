@@ -45,7 +45,8 @@ export default function Checkout({ prev }) {
         <Formik
           initialValues={initialValues}
           validationSchema={schema}
-          onSubmit={(values) => _done()}>
+          onSubmit={(values) => _done()}
+        >
           {(props) => (
             <C.Form onSubmit={(e) => e.preventDefault()}>
               <C.FormCover>
@@ -112,7 +113,8 @@ export default function Checkout({ prev }) {
                 <C.Split>
                   <div>
                     <F.Label
-                      error={props.errors.zipCode && props.touched.zipCode}>
+                      error={props.errors.zipCode && props.touched.zipCode}
+                    >
                       Zip Code
                       <span>
                         {props.touched.zipCode && props.errors.zipCode}
@@ -143,7 +145,8 @@ export default function Checkout({ prev }) {
                   </div>
                   <div>
                     <F.Label
-                      error={props.errors.country && props.touched.country}>
+                      error={props.errors.country && props.touched.country}
+                    >
                       Country{" "}
                       <span>
                         {props.touched.country && props.errors.country}
@@ -166,12 +169,14 @@ export default function Checkout({ prev }) {
                   <div>
                     <F.Radio
                       active={paymentType === "e-money"}
-                      onClick={() => setPaymentType("e-money")}>
+                      onClick={() => setPaymentType("e-money")}
+                    >
                       <span /> e-Money
                     </F.Radio>
                     <F.Radio
                       active={paymentType === "cash"}
-                      onClick={() => setPaymentType("cash")}>
+                      onClick={() => setPaymentType("cash")}
+                    >
                       <span /> Cash on Delivery
                     </F.Radio>
                   </div>
@@ -180,7 +185,8 @@ export default function Checkout({ prev }) {
                   <C.Split>
                     <div>
                       <F.Label
-                        error={props.errors.eNumber && props.touched.eNumber}>
+                        error={props.errors.eNumber && props.touched.eNumber}
+                      >
                         e-Money Number{" "}
                         <span>
                           {props.touched.eNumber && props.errors.eNumber}
@@ -235,7 +241,7 @@ export default function Checkout({ prev }) {
 export function getServerSideProps({ req }) {
   return {
     props: {
-      prev: req.headers.referer,
+      prev: req.headers.referer || "/",
     },
   };
 }

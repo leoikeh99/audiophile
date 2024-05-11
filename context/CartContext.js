@@ -17,17 +17,35 @@ export const CartProvider = ({ children }) => {
     if (cart.length === 0) {
       localStorage.setItem("cart", JSON.stringify([{ product, amount }]));
       setCart([{ product, amount }]);
-      toast.success("Item added to cart");
     } else {
       if (!cart.some((val) => val.product.id === product.id)) {
         localStorage.setItem(
           "cart",
           JSON.stringify([...cart, { product, amount }])
         );
-        setCart([...cart, { product, amount }]);
-        toast.success("Item added to cart");
+        setCart((prev) => [...prev, { product, amount }]);
+      } else {
+        //update amount
+        localStorage.setItem(
+          "cart",
+          JSON.stringify(
+            cart.map((val) =>
+              val.product.id === product.id
+                ? { ...val, amount: val.amount + amount }
+                : val
+            )
+          )
+        );
+        setCart(
+          cart.map((val) =>
+            val.product.id === product.id
+              ? { ...val, amount: val.amount + amount }
+              : val
+          )
+        );
       }
     }
+    toast.success("Item added to cart");
   };
 
   const increment = (id) => {
@@ -73,7 +91,8 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, increment, decrement, removeAll }}>
+      value={{ cart, addToCart, increment, decrement, removeAll }}
+    >
       {children}
     </CartContext.Provider>
   );

@@ -15,6 +15,11 @@ export const Button = styled.button`
     border ? `1px solid ${theme[color].hover}` : "0"};
   width: ${({ full }) => full && "100%"};
 
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
   &:hover {
     background: ${({ theme, color }) => theme[color].hover};
     color: #fff;

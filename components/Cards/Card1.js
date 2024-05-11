@@ -8,7 +8,7 @@ export default function Card1({ img, title, route }) {
   return (
     <Card>
       <div className="mainImage">
-        <Image height={160} width={180} src={img} alt="cardImg" />
+        <Image unoptimized height={160} width={180} src={img} alt="cardImg" />
       </div>
       <CardTitle>{title}</CardTitle>
       <Link href={route}>

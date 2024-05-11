@@ -33,7 +33,7 @@ export default function Summary({ submit }) {
         <Margin m={8} />
         <SpaceOut>
           <p className="light-text">SHIPPING</p>
-          <p className="dark-text">$ 50</p>
+          <p className="dark-text">$ {cart.length !== 0 ? 50 : 0}</p>
         </SpaceOut>
         <Margin m={8} />
         <SpaceOut>
@@ -71,7 +71,13 @@ export default function Summary({ submit }) {
         </SpaceOut>
       </C.Bottom>
       <Margin m={32} />
-      <Button type="submit" color="orange" full onClick={() => submit()}>
+      <Button
+        type="submit"
+        color="orange"
+        full
+        disabled={cart.length === 0}
+        onClick={() => submit()}
+      >
         CONTINUE
       </Button>
     </Cover>

@@ -41,12 +41,14 @@ export default function Product({ title, product, prev }) {
           <styles.Images>
             <div className="first">
               <Image
+                unoptimized
                 height={280}
                 width={445}
                 src={product.gallery.first.desktop}
                 alt=""
               />
               <Image
+                unoptimized
                 height={280}
                 width={445}
                 src={product.gallery.second.desktop}
@@ -54,6 +56,7 @@ export default function Product({ title, product, prev }) {
               />
             </div>
             <Image
+              unoptimized
               height={610}
               width={635}
               src={product.gallery.third.desktop}
@@ -96,7 +99,7 @@ export function getServerSideProps({ query, req }) {
   return {
     props: {
       title: `Audoiphile | ${product.name}`,
-      prev: req.headers.referer,
+      prev: req.headers.referer || "/",
       product,
     },
   };

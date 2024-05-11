@@ -18,32 +18,38 @@ export default function Cart({ setShowCart }) {
           <C.Text>Cart ({cart.length})</C.Text>
           <C.Button onClick={() => removeAll()}>Remove all</C.Button>
         </SpaceOut>
-        <C.CartItems>
-          <SimpleBar style={{ height: 240 }}>
-            {cart.map((item) => (
-              <CartItem key={item.product.id} item={item} />
-            ))}
-          </SimpleBar>
-        </C.CartItems>
-        <C.Bottom>
-          <SpaceOut>
-            <p className="light-text">Total</p>
-            <p className="dark-text">
-              ${" "}
-              {cart.length !== 0
-                ? cart
-                    .map((val) => val.product.price * val.amount)
-                    .reduce((a, b) => a + b)
-                : 0}
-            </p>
-          </SpaceOut>
-          <Margin m={24} />
-          <Link href="/checkout" passHref>
-            <Button color="orange" full>
-              Checkout
-            </Button>
-          </Link>
-        </C.Bottom>
+        {cart.length > 0 ? (
+          <>
+            <C.CartItems>
+              <SimpleBar style={{ maxHeight: 240 }}>
+                {cart.map((item) => (
+                  <CartItem key={item.product.id} item={item} />
+                ))}
+              </SimpleBar>
+            </C.CartItems>
+            <C.Bottom>
+              <SpaceOut>
+                <p className="light-text">Total</p>
+                <p className="dark-text">
+                  ${" "}
+                  {cart.length !== 0
+                    ? cart
+                        .map((val) => val.product.price * val.amount)
+                        .reduce((a, b) => a + b)
+                    : 0}
+                </p>
+              </SpaceOut>
+              <Margin m={24} />
+              <Link href="/checkout" passHref>
+                <Button color="orange" full>
+                  Checkout
+                </Button>
+              </Link>
+            </C.Bottom>
+          </>
+        ) : (
+          <p className="empty light-text">Your cart is empty</p>
+        )}
       </C.Cover>
     </>
   );

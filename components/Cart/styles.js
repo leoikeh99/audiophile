@@ -27,8 +27,8 @@ export const ToggleCover = styled.div`
 `;
 
 export const Cover = styled.div`
-  width: 377px;
-  height: 488px;
+  min-width: 377px;
+  max-height: 488px;
   padding: 32px;
   border-radius: 8px;
   background: #fff;
@@ -36,6 +36,22 @@ export const Cover = styled.div`
   top: 130px;
   right: 0;
   animation: ${getIn} 0.3s ease-in-out forwards;
+
+  .light-text {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  .dark-text {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  p.empty {
+    padding-block: 24px;
+  }
 
   @media (max-width: 1135px) {
     right: 24px;
@@ -81,18 +97,6 @@ export const Button = styled.button`
 `;
 
 export const Bottom = styled.div`
-  .light-text {
-    font-size: 15px;
-    font-weight: 500;
-    opacity: 0.5;
-    text-transform: uppercase;
-  }
-
-  .dark-text {
-    font-size: 18px;
-    font-weight: 700;
-  }
-
   .active {
     color: #d87d4a;
   }
